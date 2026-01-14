@@ -1,15 +1,23 @@
 "use client";
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { Phone } from 'lucide-react';
 
 export default function Navbar() {
   return (
     <nav style={{backgroundColor: '#255849'}} className="border-b border-gray-800">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-white">
-            CERAT PTY LTD
+          <Link href="/" className="flex items-center space-x-3">
+            <Image
+              src="/cerat-logo.jpg"
+              alt="Cerat Logo"
+              width={50}
+              height={50}
+              className="rounded-lg"
+            />
+            <span className="text-xl font-bold text-white hidden sm:inline">CERAT</span>
           </Link>
           
           <div className="hidden md:flex space-x-8">
