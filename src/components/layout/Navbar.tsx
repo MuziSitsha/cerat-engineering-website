@@ -5,7 +5,7 @@ import { Phone } from 'lucide-react';
 
 export default function Navbar() {
   return (
-    <nav className="bg-gray-900 border-b border-gray-800">
+    <nav style={{backgroundColor: '#255849'}} className="border-b border-gray-800">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-2xl font-bold text-white">

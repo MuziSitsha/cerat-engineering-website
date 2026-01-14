@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 border-t border-gray-800">
+    <footer style={{backgroundColor: '#255849'}} className="border-t border-gray-800">
       <div className="container mx-auto px-4 py-8">
         <div className="text-center">
           <h3 className="text-2xl font-bold mb-4 text-white">CERAT PTY LTD</h3>
