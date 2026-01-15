@@ -307,7 +307,7 @@ export default function GalleryPage() {
   ];
 
   const categories = useMemo(() => {
-    const cats = ["All", ...new Set(galleryItems.map((item) => item.category))];
+    const cats = ["All", ...Array.from(new Set(galleryItems.map((item) => item.category)))];
     return cats;
   }, []);
 
