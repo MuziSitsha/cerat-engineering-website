@@ -1,7 +1,6 @@
 "use client";
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Phone } from 'lucide-react';
 
 export default function Navbar() {
@@ -10,20 +9,14 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex justify-between items-center">
           <Link href="/" className="flex items-center space-x-3">
-            <Image
-              src="/cerat-logo.jpg"
-              alt="Cerat Logo"
-              width={50}
-              height={50}
-              className="rounded-lg"
-            />
-            <span className="text-xl font-bold text-white hidden sm:inline">CERAT</span>
+            <span className="text-xl font-bold text-white">CERAT PTY LTD</span>
           </Link>
           
           <div className="hidden md:flex space-x-8">
             <Link href="/" className="text-gray-300 hover:text-white">Home</Link>
             <Link href="/services" className="text-gray-300 hover:text-white">Services</Link>
             <Link href="/projects" className="text-gray-300 hover:text-white">Projects</Link>
+            <Link href="/gallery" className="text-gray-300 hover:text-white">Gallery</Link>
             <Link href="/about" className="text-gray-300 hover:text-white">About</Link>
             <Link href="/contact" className="text-gray-300 hover:text-white">Contact</Link>
           </div>
